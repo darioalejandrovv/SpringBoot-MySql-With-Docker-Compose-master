@@ -1,8 +1,8 @@
-Para correr la aplicación correr en consola "docker-compose up" en la carpeta raiz.
-Se ejecuta contenedor para DDBB Mysql y otro para el App Java Spring Boot.
+0. Disponer de Docker y docker-compose en el equipo
+1. Para correr la aplicación correr en consola "docker-compose up -d" en la carpeta raiz.
+2. Se ejecuta contenedor para DDBB Mysql y otro para el App Java Spring Boot.
+3. Crear una DDBB "dbbank" y migrar datos de casos de uso en el script BaseDatos.sql, el app-container ya debería permitir ejecutar los test's y el app en general.
 
-en src/main/resources están los scripts de DDBB para data y schemas.
-en carpeta raiz se encuentra el script BaseDatos.sql con los casos de uso.
 ____________________________________________________________________________________________
 
 CLIENTE

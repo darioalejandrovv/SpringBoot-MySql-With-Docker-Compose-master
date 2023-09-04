@@ -18,7 +18,11 @@
 --
 -- Table structure for table `clientes`
 --
+-- Crear una base de datos solo si no existe
+CREATE DATABASE IF NOT EXISTS dbbank;
 
+-- Seleccionar la base de datos recién creada o existente
+USE dbbank;
 DROP TABLE IF EXISTS `clientes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
