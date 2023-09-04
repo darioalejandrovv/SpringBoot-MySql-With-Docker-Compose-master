@@ -1,0 +1,57 @@
+-- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: dbbank
+-- ------------------------------------------------------
+-- Server version	8.0.34
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `clientes`
+--
+
+LOCK TABLES `clientes` WRITE;
+/*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
+INSERT INTO `clientes` VALUES (2,'Otavalo sn y principal',0,NULL,NULL,'Jose Lema','098254785','2','1234',_binary ''),(3,'Amazonas y NNUU',0,NULL,NULL,'Marianela Montalvo','097548965','3','5678',_binary ''),(4,'13 junio y Equinoccial',0,NULL,NULL,'Juan Osorio','098874587','4','1245',_binary '');
+/*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `cuentas`
+--
+
+LOCK TABLES `cuentas` WRITE;
+/*!40000 ALTER TABLE `cuentas` DISABLE KEYS */;
+INSERT INTO `cuentas` VALUES (1,_binary '','478758',1425.00,'Ahorro',2),(2,_binary '','225487',700.00,'Corriente',3),(3,_binary '','495878',150.00,'Ahorros',4),(4,_binary '','496825',0.00,'Ahorros',3),(5,_binary '','585545',1000.00,'Corriente',2);
+/*!40000 ALTER TABLE `cuentas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `movimientos`
+--
+
+LOCK TABLES `movimientos` WRITE;
+/*!40000 ALTER TABLE `movimientos` DISABLE KEYS */;
+INSERT INTO `movimientos` VALUES (1,'2023-09-01 20:24:22.000000','478758',1425.00,2000.00,'Retiro',575.00),(2,'2023-02-10 20:25:21.000000','225487',700.00,100.00,'Depósito',600.00),(3,'2023-09-01 20:25:49.000000','495878',150.00,0.00,'Depósito',150.00),(4,'2023-02-08 20:26:09.000000','496825',0.00,540.00,'Retiro',540.00);
+/*!40000 ALTER TABLE `movimientos` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-09-04 10:27:30
